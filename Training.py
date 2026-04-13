@@ -1,4 +1,4 @@
-import re
+# import re
 
 # data = [
 #     "OrderID: 1001 | Customer: Alice | Total: $23.50",
@@ -49,13 +49,6 @@ import re
 #     results.append(record)
 
 
-x = 15
-y = 4
-
-print(x + y)
-print(x - y)
-print(x * y)
-print(x / y)
-print(x % y)
-print(x ** y)
-print(x // y)
+from pathlib import Path
+print(Path.cwd())  
+print(Path.cwd().parent) 

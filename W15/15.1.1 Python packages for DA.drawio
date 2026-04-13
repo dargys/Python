@@ -1,0 +1,286 @@
+<mxfile host="app.diagrams.net">
+  <diagram id="4N93M3CqldzlB4VgaY6H" name="import - wrangle - visualize">
+    <mxGraphModel dx="1256" dy="1593" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="1654" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="root" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#2D3748;fontColor=#FFFFFF;strokeColor=#1A202C;fontSize=15;fontStyle=1;arcSize=10;" value="Data workflow &amp;amp; Python packages" vertex="1">
+          <mxGeometry height="60" width="170" x="30" y="555" as="geometry" />
+        </mxCell>
+        <mxCell id="phase_core" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#2C7A7B;fontColor=#FFFFFF;strokeColor=#1D5C5C;fontSize=13;fontStyle=1;arcSize=10;" value="⬡  Core Stack" vertex="1">
+          <mxGeometry height="50" width="180" x="300" y="99" as="geometry" />
+        </mxCell>
+        <mxCell id="phase_import" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#2B6CB0;fontColor=#FFFFFF;strokeColor=#1A4A7A;fontSize=13;fontStyle=1;arcSize=10;" value="⬡  Import" vertex="1">
+          <mxGeometry height="50" width="180" x="300" y="296" as="geometry" />
+        </mxCell>
+        <mxCell id="phase_wrangle" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#B7791F;fontColor=#FFFFFF;strokeColor=#7B5010;fontSize=13;fontStyle=1;arcSize=10;" value="⬡  Wrangle" vertex="1">
+          <mxGeometry height="50" width="180" x="300" y="673" as="geometry" />
+        </mxCell>
+        <mxCell id="phase_visualise" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#553C9A;fontColor=#FFFFFF;strokeColor=#3B2A6E;fontSize=13;fontStyle=1;arcSize=10;" value="⬡  Visualise" vertex="1">
+          <mxGeometry height="50" width="180" x="300" y="1001" as="geometry" />
+        </mxCell>
+        <mxCell id="phase_program" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#276749;fontColor=#FFFFFF;strokeColor=#1A4731;fontSize=13;fontStyle=1;arcSize=10;" value="⬡  Program" vertex="1">
+          <mxGeometry height="50" width="180" x="300" y="1280" as="geometry" />
+        </mxCell>
+        <mxCell id="phase_model" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#9B2C2C;fontColor=#FFFFFF;strokeColor=#6B1A1A;fontSize=13;fontStyle=1;arcSize=10;" value="⬡  Model" vertex="1">
+          <mxGeometry height="50" width="180" x="300" y="1500" as="geometry" />
+        </mxCell>
+        <mxCell id="core_pandas" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E6FFFA;fontColor=#1D5C5C;strokeColor=light-dark(#CC00CC,#5DA0A1);fontSize=11;arcSize=10;align=left;spacingLeft=8;" value="&lt;b&gt;pandas&lt;/b&gt;&lt;br&gt;&lt;font style=&#39;font-size:10px&#39;&gt;DataFrame · select, filter, group,&lt;br&gt;join, reshape · the backbone&lt;/font&gt;" vertex="1">
+          <mxGeometry height="60" width="230" x="540" y="55" as="geometry" />
+        </mxCell>
+        <mxCell id="core_numpy" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E6FFFA;fontColor=#1D5C5C;strokeColor=#CC00CC;fontSize=11;arcSize=10;align=left;spacingLeft=8;" value="&lt;b&gt;numpy&lt;/b&gt;&lt;br&gt;&lt;font style=&#39;font-size:10px&#39;&gt;Numerical arrays · vectorised math&lt;br&gt;Foundation all other libs build on&lt;/font&gt;" vertex="1">
+          <mxGeometry height="60" width="230" x="540" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="imp_csv" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EBF8FF;fontColor=#1A4A7A;strokeColor=#CC00CC;fontSize=11;arcSize=10;align=left;spacingLeft=8;" value="&lt;b&gt;pandas.read_csv / read_excel&lt;/b&gt;&lt;br&gt;&lt;font style=&#39;font-size:10px&#39;&gt;CSV, TSV, Excel flat files&lt;br&gt;+ openpyxl for .xlsx&lt;/font&gt;" vertex="1">
+          <mxGeometry height="60" width="230" x="841" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="imp_sql" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EBF8FF;fontColor=#1A4A7A;strokeColor=#2B6CB0;fontSize=11;arcSize=10;align=left;spacingLeft=8;" value="&lt;b&gt;sqlalchemy · duckdb&lt;/b&gt;&lt;br&gt;&lt;font style=&#39;font-size:10px&#39;&gt;Relational DBs · SQL on DataFrames&lt;br&gt;Larger-than-memory queries&lt;/font&gt;" vertex="1">
+          <mxGeometry height="60" width="230" x="841" y="215" as="geometry" />
+        </mxCell>
+        <mxCell id="imp_api" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EBF8FF;fontColor=#B3B3B3;strokeColor=#2B6CB0;fontSize=11;arcSize=10;align=left;spacingLeft=8;" value="&lt;font&gt;&lt;font style=&quot;&quot;&gt;&lt;b style=&quot;&quot;&gt;&lt;font style=&quot;color: rgb(179, 179, 179);&quot;&gt;requests&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;/font&gt;&lt;font style=&quot;color: light-dark(rgb(179, 179, 179), rgb(83, 83, 83)); font-size: 10px;&quot;&gt;HTTP calls to REST APIs&lt;br&gt;Fetch &amp;amp; parse JSON responses&lt;/font&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="60" width="230" x="841" y="291" as="geometry" />
+        </mxCell>
+        <mxCell id="imp_scrape" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EBF8FF;fontColor=#1A4A7A;strokeColor=#2B6CB0;fontSize=11;arcSize=10;align=left;spacingLeft=8;" value="&lt;b&gt;&lt;font style=&quot;color: rgb(179, 179, 179);&quot;&gt;beautifulsoup4&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:10px&quot;&gt;&lt;font style=&quot;color: rgb(179, 179, 179);&quot;&gt;Parse HTML · web scraping&lt;br&gt;&lt;/font&gt;&lt;font style=&quot;color: rgb(179, 179, 179);&quot;&gt;Extract tables from web pages&lt;/font&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="60" width="230" x="841" y="366" as="geometry" />
+        </mxCell>
+        <mxCell id="imp_formats" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EBF8FF;fontColor=#1A4A7A;strokeColor=#2B6CB0;fontSize=11;arcSize=10;align=left;spacingLeft=8;" value="&lt;font style=&quot;color: rgb(179, 179, 179);&quot;&gt;&lt;b style=&quot;&quot;&gt;json (built-in) · pyarrow&lt;/b&gt;&lt;br&gt;&lt;/font&gt;&lt;font style=&quot;font-size:10px&quot;&gt;&lt;font style=&quot;color: rgb(179, 179, 179);&quot;&gt;JSON parsing · Parquet files&lt;br&gt;&lt;/font&gt;&lt;font style=&quot;color: rgb(179, 179, 179);&quot;&gt;Columnar storage format&lt;/font&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="60" width="230" x="841" y="442" as="geometry" />
+        </mxCell>
+        <mxCell id="wr_reshape" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFBEB;fontColor=#7B5010;strokeColor=#CC00CC;fontSize=11;arcSize=10;align=left;spacingLeft=8;" value="&lt;b&gt;pandas.melt / pivot_table&lt;/b&gt;&lt;br&gt;&lt;font style=&#39;font-size:10px&#39;&gt;Wide ↔ long · tidy data&lt;br&gt;One variable per column&lt;/font&gt;" vertex="1">
+          <mxGeometry height="60" width="230" x="841" y="517" as="geometry" />
+        </mxCell>
+        <mxCell id="wr_strings" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFBEB;fontColor=#7B5010;strokeColor=#CC00CC;fontSize=11;arcSize=10;align=left;spacingLeft=8;" value="&lt;b&gt;pandas .str · re (built-in)&lt;/b&gt;&lt;br&gt;&lt;font style=&#39;font-size:10px&#39;&gt;Vectorised string ops · regex&lt;br&gt;No loops needed&lt;/font&gt;" vertex="1">
+          <mxGeometry height="60" width="230" x="841" y="592" as="geometry" />
+        </mxCell>
+        <mxCell id="wr_dates" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFBEB;fontColor=#7B5010;strokeColor=#CC00CC;fontSize=11;arcSize=10;align=left;spacingLeft=8;" value="&lt;b&gt;pandas .dt · datetime (built-in)&lt;/b&gt;&lt;br&gt;&lt;font style=&#39;font-size:10px&#39;&gt;Parse, extract, shift dates&lt;br&gt;Year · month · quarter · week&lt;/font&gt;" vertex="1">
+          <mxGeometry height="60" width="230" x="841" y="668" as="geometry" />
+        </mxCell>
+        <mxCell id="wr_cat" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFBEB;fontColor=#7B5010;strokeColor=#CC00CC;fontSize=11;arcSize=10;align=left;spacingLeft=8;" value="&lt;b&gt;pandas Categorical&lt;/b&gt;&lt;br&gt;&lt;font style=&#39;font-size:10px&#39;&gt;Ordered categories · controlled sort&lt;br&gt;Memory-efficient encoding&lt;/font&gt;" vertex="1">
+          <mxGeometry height="60" width="230" x="841" y="743" as="geometry" />
+        </mxCell>
+        <mxCell id="wr_large" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFBEB;fontColor=#7B5010;strokeColor=#B7791F;fontSize=11;arcSize=10;align=left;spacingLeft=8;" value="&lt;b&gt;duckdb · pyarrow&lt;/b&gt;&lt;br&gt;&lt;font style=&#39;font-size:10px&#39;&gt;Large / out-of-memory datasets&lt;br&gt;Columnar, fast analytical queries&lt;/font&gt;" vertex="1">
+          <mxGeometry height="60" width="230" x="841" y="818" as="geometry" />
+        </mxCell>
+        <mxCell id="vis_mpl" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FAF5FF;fontColor=#3B2A6E;strokeColor=#CC00CC;fontSize=11;arcSize=10;align=left;spacingLeft=8;" value="&lt;b&gt;matplotlib&lt;/b&gt;&lt;br&gt;&lt;font style=&#39;font-size:10px&#39;&gt;Full control · all chart types&lt;br&gt;Foundation all other libs build on&lt;/font&gt;" vertex="1">
+          <mxGeometry height="60" width="230" x="841" y="894" as="geometry" />
+        </mxCell>
+        <mxCell id="vis_sns" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FAF5FF;fontColor=#3B2A6E;strokeColor=#553C9A;fontSize=11;arcSize=10;align=left;spacingLeft=8;" value="&lt;b&gt;seaborn&lt;/b&gt;&lt;br&gt;&lt;font style=&#39;font-size:10px&#39;&gt;Map data columns to aesthetics&lt;br&gt;Statistical charts · distributions&lt;/font&gt;" vertex="1">
+          <mxGeometry height="60" width="230" x="841" y="969" as="geometry" />
+        </mxCell>
+        <mxCell id="vis_plotly" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FAF5FF;fontColor=#3B2A6E;strokeColor=#553C9A;fontSize=11;arcSize=10;align=left;spacingLeft=8;" value="&lt;b&gt;plotly / plotly express&lt;/b&gt;&lt;br&gt;&lt;font style=&#39;font-size:10px&#39;&gt;Interactive · hover, zoom, filter&lt;br&gt;Web-ready · works in notebooks&lt;/font&gt;" vertex="1">
+          <mxGeometry height="60" width="230" x="841" y="1045" as="geometry" />
+        </mxCell>
+        <mxCell id="pg_iter" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F0FFF4;fontColor=#1A4731;strokeColor=#276749;fontSize=11;arcSize=10;align=left;spacingLeft=8;" value="&lt;b&gt;map / filter · list comprehensions&lt;/b&gt;&lt;br&gt;&lt;font style=&#39;font-size:10px&#39;&gt;Apply functions across collections&lt;br&gt;itertools for combinations &amp;amp; chains&lt;/font&gt;" vertex="1">
+          <mxGeometry height="60" width="230" x="540" y="1160" as="geometry" />
+        </mxCell>
+        <mxCell id="pg_path" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F0FFF4;fontColor=#1A4731;strokeColor=#276749;fontSize=11;arcSize=10;align=left;spacingLeft=8;" value="&lt;b&gt;pathlib (built-in)&lt;/b&gt;&lt;br&gt;&lt;font style=&#39;font-size:10px&#39;&gt;Safe cross-platform file paths&lt;br&gt;Glob for batch file discovery&lt;/font&gt;" vertex="1">
+          <mxGeometry height="60" width="230" x="540" y="1231" as="geometry" />
+        </mxCell>
+        <mxCell id="pg_fstr" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F0FFF4;fontColor=#1A4731;strokeColor=#276749;fontSize=11;arcSize=10;align=left;spacingLeft=8;" value="&lt;b&gt;f-strings (built-in)&lt;/b&gt;&lt;br&gt;&lt;font style=&#39;font-size:10px&#39;&gt;Embed variables &amp;amp; expressions in text&lt;br&gt;Format numbers, dates, percentages&lt;/font&gt;" vertex="1">
+          <mxGeometry height="60" width="230" x="540" y="1304" as="geometry" />
+        </mxCell>
+        <mxCell id="pg_func" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F0FFF4;fontColor=#1A4731;strokeColor=#276749;fontSize=11;arcSize=10;align=left;spacingLeft=8;" value="&lt;b&gt;def · lambda · try/except&lt;/b&gt;&lt;br&gt;&lt;font style=&#39;font-size:10px&#39;&gt;Reusable functions · clean pipelines&lt;br&gt;Graceful error handling&lt;/font&gt;" vertex="1">
+          <mxGeometry height="60" width="230" x="540" y="1377" as="geometry" />
+        </mxCell>
+        <mxCell id="mod_sklearn" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF5F5;fontColor=#6B1A1A;strokeColor=#9B2C2C;fontSize=11;arcSize=10;align=left;spacingLeft=8;" value="&lt;b&gt;scikit-learn&lt;/b&gt;&lt;br&gt;&lt;font style=&#39;font-size:10px&#39;&gt;Unified fit → predict API&lt;br&gt;Classification · regression · clustering&lt;br&gt;Train/test split · cross-validation&lt;/font&gt;" vertex="1">
+          <mxGeometry height="70" width="230" x="540" y="1449" as="geometry" />
+        </mxCell>
+        <mxCell id="mod_stats" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF5F5;fontColor=#6B1A1A;strokeColor=#9B2C2C;fontSize=11;arcSize=10;align=left;spacingLeft=8;" value="&lt;b&gt;statsmodels&lt;/b&gt;&lt;br&gt;&lt;font style=&#39;font-size:10px&#39;&gt;p-values · confidence intervals&lt;br&gt;OLS with R-style formula syntax&lt;br&gt;Hypothesis testing · time series&lt;/font&gt;" vertex="1">
+          <mxGeometry height="70" width="230" x="540" y="1531" as="geometry" />
+        </mxCell>
+        <mxCell id="legend_title" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;fontSize=11;fontStyle=1;" value="Phase colour key" vertex="1">
+          <mxGeometry height="30" width="160" x="70" y="1330" as="geometry" />
+        </mxCell>
+        <mxCell id="leg_core" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#2C7A7B;fontColor=#FFFFFF;strokeColor=#1D5C5C;fontSize=10;" value="Core Stack" vertex="1">
+          <mxGeometry height="26" width="110" x="70" y="1368" as="geometry" />
+        </mxCell>
+        <mxCell id="leg_import" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#2B6CB0;fontColor=#FFFFFF;strokeColor=#1A4A7A;fontSize=10;" value="Import" vertex="1">
+          <mxGeometry height="26" width="110" x="70" y="1404" as="geometry" />
+        </mxCell>
+        <mxCell id="leg_wrangle" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#B7791F;fontColor=#FFFFFF;strokeColor=#7B5010;fontSize=10;" value="Wrangle" vertex="1">
+          <mxGeometry height="26" width="110" x="70" y="1440" as="geometry" />
+        </mxCell>
+        <mxCell id="leg_visualise" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#553C9A;fontColor=#FFFFFF;strokeColor=#3B2A6E;fontSize=10;" value="Visualise" vertex="1">
+          <mxGeometry height="26" width="110" x="70" y="1476" as="geometry" />
+        </mxCell>
+        <mxCell id="leg_program" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#276749;fontColor=#FFFFFF;strokeColor=#1A4731;fontSize=10;" value="Program" vertex="1">
+          <mxGeometry height="26" width="110" x="70" y="1512" as="geometry" />
+        </mxCell>
+        <mxCell id="leg_model" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#9B2C2C;fontColor=#FFFFFF;strokeColor=#6B1A1A;fontSize=10;" value="Model" vertex="1">
+          <mxGeometry height="26" width="110" x="70" y="1548" as="geometry" />
+        </mxCell>
+        <mxCell id="sMRUILihZCSnBB9N1_DE-1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FAF5FF;fontColor=#3B2A6E;strokeColor=#553C9A;fontSize=11;arcSize=10;align=left;spacingLeft=8;" value="&lt;font style=&quot;&quot;&gt;&lt;b&gt;streamlit&lt;/b&gt;&lt;/font&gt;&lt;div&gt;&lt;span style=&quot;font-size: 10px;&quot;&gt;&lt;font&gt;Web app framework · wraps your Python script into a live app · UI widgets · auto-reruns · deployable&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="230" x="841" y="1120" as="geometry" />
+        </mxCell>
+        <mxCell id="gmNTSe9vLFzjvOo5jU9Y-1" edge="1" parent="1" source="root" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;edgeStyle=orthogonalEdgeStyle;" target="phase_core" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="240" y="500" as="sourcePoint" />
+            <mxPoint x="290" y="450" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gmNTSe9vLFzjvOo5jU9Y-4" edge="1" parent="1" source="root" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;edgeStyle=orthogonalEdgeStyle;" target="phase_import" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="340" y="905" as="sourcePoint" />
+            <mxPoint x="420" y="460" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gmNTSe9vLFzjvOo5jU9Y-5" edge="1" parent="1" source="root" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;edgeStyle=orthogonalEdgeStyle;" target="phase_wrangle" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="250" y="1225" as="sourcePoint" />
+            <mxPoint x="330" y="780" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gmNTSe9vLFzjvOo5jU9Y-6" edge="1" parent="1" source="root" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;edgeStyle=orthogonalEdgeStyle;" target="phase_visualise" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="230" y="1265" as="sourcePoint" />
+            <mxPoint x="310" y="820" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gmNTSe9vLFzjvOo5jU9Y-7" edge="1" parent="1" source="root" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;edgeStyle=orthogonalEdgeStyle;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" target="phase_program" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="260" y="550" as="sourcePoint" />
+            <mxPoint x="290" y="750" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gmNTSe9vLFzjvOo5jU9Y-8" edge="1" parent="1" source="root" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;edgeStyle=orthogonalEdgeStyle;" target="phase_model" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="190" y="1415" as="sourcePoint" />
+            <mxPoint x="270" y="970" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2wxWhCNZJkDNWPOBh4EU-2" edge="1" parent="1" source="phase_core" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" target="core_pandas" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="480" y="170" as="sourcePoint" />
+            <mxPoint x="530" y="120" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2wxWhCNZJkDNWPOBh4EU-5" edge="1" parent="1" source="phase_core" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" target="core_numpy" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="480" y="100" as="sourcePoint" />
+            <mxPoint x="580" y="220" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2wxWhCNZJkDNWPOBh4EU-6" edge="1" parent="1" source="phase_import" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" target="imp_csv" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="580" y="490" as="sourcePoint" />
+            <mxPoint x="640" y="470" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2wxWhCNZJkDNWPOBh4EU-7" edge="1" parent="1" source="phase_import" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" target="imp_sql" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="540" y="540" as="sourcePoint" />
+            <mxPoint x="600" y="520" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2wxWhCNZJkDNWPOBh4EU-8" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="imp_api" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="480" y="321" as="sourcePoint" />
+            <mxPoint x="620" y="670" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2wxWhCNZJkDNWPOBh4EU-9" edge="1" parent="1" source="phase_import" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" target="imp_scrape" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="590" y="580" as="sourcePoint" />
+            <mxPoint x="650" y="560" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2wxWhCNZJkDNWPOBh4EU-10" edge="1" parent="1" source="phase_import" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" target="imp_formats" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="570" y="510" as="sourcePoint" />
+            <mxPoint x="630" y="490" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2wxWhCNZJkDNWPOBh4EU-11" edge="1" parent="1" source="phase_wrangle" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" target="wr_reshape" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="500" y="550" as="sourcePoint" />
+            <mxPoint x="560" y="530" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2wxWhCNZJkDNWPOBh4EU-12" edge="1" parent="1" source="phase_wrangle" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" target="wr_strings" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="600" y="730" as="sourcePoint" />
+            <mxPoint x="660" y="710" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2wxWhCNZJkDNWPOBh4EU-13" edge="1" parent="1" source="phase_wrangle" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" target="wr_dates" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="530" y="830" as="sourcePoint" />
+            <mxPoint x="590" y="810" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2wxWhCNZJkDNWPOBh4EU-14" edge="1" parent="1" source="phase_wrangle" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" target="wr_cat" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="570" y="870" as="sourcePoint" />
+            <mxPoint x="630" y="850" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2wxWhCNZJkDNWPOBh4EU-15" edge="1" parent="1" source="phase_wrangle" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" target="wr_large" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="510" y="910" as="sourcePoint" />
+            <mxPoint x="570" y="890" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2wxWhCNZJkDNWPOBh4EU-16" edge="1" parent="1" source="phase_visualise" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" target="vis_mpl" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="590" y="880" as="sourcePoint" />
+            <mxPoint x="650" y="860" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2wxWhCNZJkDNWPOBh4EU-17" edge="1" parent="1" source="phase_visualise" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" target="vis_sns" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="670" y="1030" as="sourcePoint" />
+            <mxPoint x="730" y="1010" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2wxWhCNZJkDNWPOBh4EU-18" edge="1" parent="1" source="phase_visualise" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" target="vis_plotly" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="470" y="1110" as="sourcePoint" />
+            <mxPoint x="530" y="1090" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2wxWhCNZJkDNWPOBh4EU-20" edge="1" parent="1" source="phase_program" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" target="pg_iter" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="450" y="1140" as="sourcePoint" />
+            <mxPoint x="510" y="1120" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2wxWhCNZJkDNWPOBh4EU-21" edge="1" parent="1" source="phase_program" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" target="pg_path" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="370" y="1210" as="sourcePoint" />
+            <mxPoint x="430" y="1190" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2wxWhCNZJkDNWPOBh4EU-22" edge="1" parent="1" source="phase_program" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" target="pg_fstr" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="470" y="1350" as="sourcePoint" />
+            <mxPoint x="510" y="1270" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2wxWhCNZJkDNWPOBh4EU-23" edge="1" parent="1" source="phase_program" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" target="pg_func" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="440" y="1410" as="sourcePoint" />
+            <mxPoint x="500" y="1390" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2wxWhCNZJkDNWPOBh4EU-24" edge="1" parent="1" source="phase_model" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" target="mod_sklearn" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="420" y="1420" as="sourcePoint" />
+            <mxPoint x="480" y="1400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2wxWhCNZJkDNWPOBh4EU-25" edge="1" parent="1" source="phase_model" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" target="mod_stats" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="400" y="1450" as="sourcePoint" />
+            <mxPoint x="460" y="1430" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2wxWhCNZJkDNWPOBh4EU-26" edge="1" parent="1" source="phase_visualise" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" target="sMRUILihZCSnBB9N1_DE-1" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="680" y="1050" as="sourcePoint" />
+            <mxPoint x="1041" y="1099" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

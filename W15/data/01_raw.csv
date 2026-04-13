@@ -1,0 +1,9 @@
+restaurant,city,revenue,currency,covers,rating
+  pasta palace   ,Stockholm,182000,SEK,210,4.5
+Burger Barn  ,Stockholm,95000,SEK,180,3.8
+SUSHI SPOT,Copenhagen,28000,DKK,95,4.9
+taco town, Oslo ,61000,NOK,140,
+Pasta Palace,Stockholm,182000,SEK,210,4.5
+Green Garden,Oslo,see notes,NOK,88,4.1  
+Burger Barn,Copenhagen,31500,DKK,210,6.0
+  Ramen House ,Stockholm,74000,SEK,,4.2
